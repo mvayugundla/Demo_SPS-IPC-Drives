@@ -1,0 +1,6 @@
+
+**** Build of configuration Debug for project DemoAppV2 ****
+
+xmake CONFIG=Debug all 
+Using modules: module_i2c_master module_webserver module_wifi_tiwisl module_mutual_thread_comm module_spi_master
+Build Complete

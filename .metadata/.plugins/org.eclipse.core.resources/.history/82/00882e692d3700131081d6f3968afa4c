@@ -1,0 +1,20 @@
+#include <platform.h>
+#include <xs1.h>
+
+
+
+on stdcore[3]: out port narf=XS1_PORT_8A;
+
+int main()
+{
+
+	par
+	{
+		on stdcore[3]:
+		{
+
+		}
+
+	}
+	return 0;
+}

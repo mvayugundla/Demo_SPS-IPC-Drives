@@ -1,0 +1,14 @@
+/*
+ * command.c
+ *
+ *  Created on: Sep 27, 2013
+ *      Author: arjun
+ */
+
+#include "command.h"
+void print()
+{
+	printf("Hey");
+
+}
+

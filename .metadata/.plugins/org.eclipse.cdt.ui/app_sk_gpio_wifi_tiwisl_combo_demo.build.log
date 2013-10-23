@@ -1,0 +1,6 @@
+
+**** Build of configuration Debug for project app_sk_gpio_wifi_tiwisl_combo_demo ****
+
+xmake CONFIG=Debug all 
+/home/arjun/tools/XMOS/xTIMEcomposer/12.2.0/build/xcommon/module_xcommon/build/../build/Makefile.common1:462: *** Cannot find module `module_i2c_master'.  Stop.
+xmake: *** [bin/Debug/app_sk_gpio_wifi_tiwisl_combo_demo_Debug.xe] Error 2

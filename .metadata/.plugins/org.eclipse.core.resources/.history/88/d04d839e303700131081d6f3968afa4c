@@ -1,0 +1,93 @@
+#include <platform.h>
+#include <xs1.h>
+
+
+
+on stdcore[3]: out port motor=XS1_PORT_8A;
+
+
+#define time_min 2000
+#define time_max 1000000
+
+
+void step(unsigned pulse_time)
+{
+	timer tmr;
+	unsigned time;
+	tmr :> time;
+
+		motor <: 1;
+		time+=pulse_time;
+		tmr when timerafter(time) :> void;
+
+		motor <:0;
+		time+=30;
+		tmr when timerafter(time) :> void;
+
+}
+
+int main()
+{
+
+	par
+	{
+		on stdcore[3]:
+		{
+			unsigned pulse_time=time_max;
+			while(1)
+			{
+
+
+				timer tmr;
+				unsigned time,time_ph,time_pl;
+				unsigned ph=1;
+
+				tmr :> time;
+
+				tmr :> time_ph;
+				tmr :> time_pl;
+
+
+
+
+				select
+				{
+					case tmr when timerafter(time):> void:
+						if(pulse_time<=time_min)
+						{
+							pulse_time=time_max;
+						}
+						else
+						{
+							pulse_time-=1000;
+						}
+						time+=2000;
+					break;
+
+
+				}
+
+				if(ph_en)
+				select
+				{
+					case tmr when timerafter(time_ph):> void:
+					{
+						ph_en=0;
+						pl_en=1;
+					}
+				}
+				else
+				select
+				{
+					case tmr when timerafter(time_pl):> void:
+					{
+
+					}
+				}
+
+			}
+		}
+
+	}
+	return 0;
+}

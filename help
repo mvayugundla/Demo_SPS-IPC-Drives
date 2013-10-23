@@ -1,0 +1,5 @@
+DemoAppV1: works with direct connection for controlling the valve through a relay
+dependencies: none
+
+DemoAppV2:
+dependencies: module_i2c_master module_webserver module_wifi_tiwisl (one can see the same from then USED_MODULES section in makefile of the projecr)  

@@ -1,0 +1,39 @@
+#include <platform.h>
+#include <xs1.h>
+
+
+
+on stdcore[3]: out port motor=XS1_PORT_8A;
+
+
+#define time_up 30
+#define time_down 20000
+
+
+int main()
+{
+
+	par
+	{
+		on stdcore[3]:
+		{
+			timer tmr;
+			unsigned time;
+			tmr :> time;
+
+			while(1)
+			{
+
+				motor <: 1;
+				time+=time_up;
+				tmr when timerafter(time) :> void;
+
+				motor <:0;
+				time+=30;
+				tmr when timerafter(time) :> void;
+			}
+		}
+
+	}
+	return 0;
+}
