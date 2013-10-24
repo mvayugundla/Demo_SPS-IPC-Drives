@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 on stdcore[3]: out port vent0 = XS1_PORT_1B;
-//on stdcore[3]: out port vent0 =XS1_PORT_4A;
+//on stdcore[3]: out port vent0 =XS1_PORT_8A;
 #define FLASH_PERIOD 200000000
 //#define ON_PERIOD 	  1000000000
 
@@ -76,7 +76,8 @@ int main(void)
 {
 	par
 	{
-		on stdcore[3]: printing();
+	on stdcore[3]: printing();
+
 
 	}
 }

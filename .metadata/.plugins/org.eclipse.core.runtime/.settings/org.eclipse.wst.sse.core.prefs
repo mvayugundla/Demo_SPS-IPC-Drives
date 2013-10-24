@@ -1,3 +1,3 @@
-#Fri Oct 18 13:36:20 CEST 2013
-task-tag-projects-already-scanned=DemoAppV1,DemoAppV2,DemoAppV3,module_i2c_master,module_mutual_thread_comm,module_spi_master,module_webserver,module_wifi_tiwisl,Motor
+#Thu Oct 24 09:19:13 CEST 2013
+task-tag-projects-already-scanned=DemoAppV1,DemoAppV2,DemoAppV3,module_i2c_master,module_mutual_thread_comm,module_spi_master,module_webserver,module_wifi_tiwisl,Motor,Test
 eclipse.preferences.version=1

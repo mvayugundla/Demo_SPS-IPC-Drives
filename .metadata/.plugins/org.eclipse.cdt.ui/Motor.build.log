@@ -2,5 +2,8 @@
 **** Build of configuration Debug for project Motor ****
 
 xmake CONFIG=Debug all 
+Creating dependencies for Motor.xc
+Compiling Motor.xc
 No modules used.
+Creating Motor_Debug.xe
 Build Complete

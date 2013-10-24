@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="31" version="2.0">
+<workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1020" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -25,7 +25,7 @@
 <coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.xmos.cdt.ui.XCEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.xmos.cdt.ui.XCEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -34,16 +34,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.xmos.cdt.ui.XCEditor" name="test.xc" partName="test.xc" path="/home/arjun/workspace/XMOS/12.2.0/DemoAppV1/src/test.xc" title="test.xc" tooltip="DemoAppV1/src/test.xc" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoAppV1/src/test.xc"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="237" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -81,7 +75,7 @@
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline"/>
 </views>
-<perspectives activePart="com.xmos.cdt.ui.XCEditor" activePerspective="com.xmos.cdt.ui.XdeEditPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.xmos.cdt.ui.XdeEditPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.xmos.cdt.ui.XdeEditPerspective" id="com.xmos.cdt.ui.XdeEditPerspective" label="XMOS Edit"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -123,9 +117,9 @@
 <hide_toolbar_item_id id="org.eclipse.ui.workbench.navigate"/>
 <hide_toolbar_item_id id="org.eclipse.ui.file.print"/>
 <hide_toolbar_item_id id="org.eclipse.search.searchActionSet"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<hide_toolbar_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
 <hide_toolbar_item_id id="newWizardDropDown"/>
+<hide_toolbar_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.cdt.ui.buildConfigToolbarAction"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="com.xmos.xsoftip.ui.views.xsoftip.XSoftIPView"/>
@@ -161,8 +155,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.22125813" ratioLeft="408" ratioRight="1436" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.48670757" ratioLeft="476" ratioRight="502" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.17961784" ratioLeft="282" ratioRight="1288" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.54535866" ratioLeft="517" ratioRight="431" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -202,168 +196,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/home/arjun/tools/XMOS/xTIMEcomposer/12.2.0/target/include/stdlib.h" project="DemoAppV3"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV3/src/web_page_functions.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DemoAppV3/src/app_handler.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV3/src/app_handler.xc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV3/src/main.xc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV2/src/main.xc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV3/src/main.xc"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV1/src/test.xc"/>
-</editors>
-<item historyLabel="stdlib.h" index="0">
-<position info="not_deleted" x="1212" y="0"/>
-</item>
-<item historyLabel="web_page_functions.c" index="1">
-<position info="not_deleted" x="1656" y="0"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="1057" y="14"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="745" y="14"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="846" y="26"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="1692" y="0"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="416" y="0"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="876" y="6"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="857" y="5"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="1057" y="14"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="1215" y="0"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="860" y="5"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="1029" y="5"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="1566" y="5"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="2777" y="5"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="2830" y="0"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3671" y="5"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="857" y="5"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3671" y="5"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3627" y="0"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3626" y="0"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="857" y="5"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3626" y="0"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="857" y="5"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3068" y="0"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="2214" y="0"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3068" y="0"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="1057" y="14"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="745" y="14"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="2214" y="0"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="935" y="0"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="745" y="14"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="2631" y="26"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="436" y="26"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3680" y="9"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="2723" y="9"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3671" y="5"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="951" y="0"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="2214" y="0"/>
-</item>
-<item historyLabel="app_handler.h" index="2">
-<position info="not_deleted" x="951" y="0"/>
-</item>
-<item historyLabel="main.xc" index="4">
-<position info="not_deleted" x="2214" y="0"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3671" y="0"/>
-</item>
-<item historyLabel="main.xc" index="5">
-<position info="not_deleted" x="1071" y="0"/>
-</item>
-<item historyLabel="app_handler.xc" index="3">
-<position info="not_deleted" x="3671" y="0"/>
-</item>
-<item historyLabel="main.xc" index="6">
-<position info="not_deleted" x="2214" y="0"/>
-</item>
-<item historyLabel="main.xc" index="5">
-<position info="not_deleted" x="1008" y="0"/>
-</item>
-<item historyLabel="main.xc" index="5">
-<position info="not_deleted" x="2318" y="0"/>
-</item>
-<item historyLabel="test.xc" index="7">
-<position info="not_deleted" x="403" y="0"/>
-</item>
-<item historyLabel="main.xc" index="5">
-<position info="not_deleted" x="949" y="0"/>
-</item>
-<item active="true" historyLabel="test.xc" index="7">
-<position info="not_deleted" x="403" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -383,11 +216,11 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="test.xc" tooltip="DemoAppV1/src/test.xc">
-<persistable path="/DemoAppV1/src/test.xc"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="main.xc" tooltip="DemoAppV2/src/main.xc">
 <persistable path="/DemoAppV2/src/main.xc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="test.xc" tooltip="DemoAppV1/src/test.xc">
+<persistable path="/DemoAppV1/src/test.xc"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="interface.html" tooltip="DemoAppV3/web/interface.html">
 <persistable path="/DemoAppV3/web/interface.html"/>

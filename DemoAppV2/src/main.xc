@@ -13,20 +13,7 @@
 
 #define DHCP
 
-on stdcore[0]: out port ext_ant=XS1_PORT_1L;
-
-/*
-#define TEST_STATE_0 0
-#define TEST_STATE_1 1
-
-
-on stdcore[0]: out port pin0 = XS1_PORT_1L;
-on stdcore[0]: out port pin1 = XS1_PORT_1F;
-on stdcore[0]: out port pin2 = XS1_PORT_1K;
-on stdcore[0]: out port pin3 = XS1_PORT_1I;
-on stdcore[0]: out port pin4 = XS1_PORT_1J;
-on stdcore[0]: out port pin5 = XS1_PORT_4E;
-*/
+//on stdcore[0]: out port ext_ant=XS1_PORT_1L; //(for Victor's module)
 
 //::Ports Start
  on stdcore[0]: spi_master_interface tiwisl_spi =
@@ -42,13 +29,11 @@ on stdcore[0]: out port pin5 = XS1_PORT_4E;
  {
 
  XS1_PORT_4E, // nCS - Bit0, Power enable - Bit1
- XS1_PORT_1F, // nIRQ
-
+ //XS1_PORT_1F, // nIRQ (for Victor's module)
+ XS1_PORT_1L, // nIRQ
  };
 
-
 on stdcore[3]: r_i2c p_i2c = { XS1_PORT_1F, XS1_PORT_1B, 1000 };
-//on stdcore[1]: port p_led=XS1_PORT_4A;
 on stdcore[3]: port p_led = XS1_PORT_4A;
 on stdcore[3]: port p_button = XS1_PORT_4C;
 //::Ports End
@@ -100,19 +85,8 @@ int main(void) {
 	{
 		on stdcore[0]:
 		{
-
-			ext_ant<:1;
+			//ext_ant<:1; //(for Victor's module)
 			wifi_tiwisl_server(c_xtcp[0], tiwisl_spi, tiwisl_ctrl);
-
-			/*
-			pin0<:TEST_STATE_0; //1L
-			pin1<:TEST_STATE_0; //1F
-			pin2<:TEST_STATE_0; //1K
-			pin3<:TEST_STATE_0; //1I
-			pin4<:TEST_STATE_0; //1J
-			pin5<:2; //4E
-			while (1);
-			*/
 		}
 
 		on stdcore[0]:
