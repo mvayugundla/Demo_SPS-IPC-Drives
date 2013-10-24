@@ -1,5 +1,5 @@
 
-**** Build of configuration Default for project module_wifi_tiwisl ****
+**** Clean-only build of configuration Default for project module_wifi_tiwisl ****
 
-xmake -f .makefile all 
+xmake -f .makefile clean 
 ** Module only - only builds as part of application **

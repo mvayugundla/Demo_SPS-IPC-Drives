@@ -1,9 +1,7 @@
 
-**** Build of configuration Debug for project Motor ****
+**** Clean-only build of configuration Debug for project Motor ****
 
-xmake CONFIG=Debug all 
-Creating dependencies for Motor.xc
-Compiling Motor.xc
-No modules used.
-Creating Motor_Debug.xe
-Build Complete
+xmake CONFIG=Debug clean 
+Cleaning /home/arjun/Dropbox/workspace/workspace_synapticon/XMOS/12.2.0/Motor
+rm -rf './bin/Debug'
+rm -rf './.build_Debug'

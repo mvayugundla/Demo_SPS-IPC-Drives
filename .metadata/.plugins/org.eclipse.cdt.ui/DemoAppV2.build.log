@@ -1,6 +1,7 @@
 
-**** Build of configuration Debug for project DemoAppV2 ****
+**** Clean-only build of configuration Debug for project DemoAppV2 ****
 
-xmake CONFIG=Debug all 
-Using modules: module_i2c_master module_webserver module_wifi_tiwisl module_mutual_thread_comm module_spi_master
-Build Complete
+xmake CONFIG=Debug clean 
+Cleaning /home/arjun/Dropbox/workspace/workspace_synapticon/XMOS/12.2.0/DemoAppV2
+rm -rf './bin/Debug'
+rm -rf './.build_Debug'
