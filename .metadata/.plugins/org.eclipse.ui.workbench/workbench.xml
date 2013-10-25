@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="30" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1020" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -25,7 +25,7 @@
 <coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.xmos.cdt.ui.XCEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.xmos.cdt.ui.XCEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -34,10 +34,16 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="com.xmos.cdt.ui.XCEditor" name="main.xc" partName="main.xc" path="/home/arjun/Dropbox/workspace/workspace_synapticon/XMOS/12.2.0/DemoAppV3/src/main.xc" title="main.xc" tooltip="DemoAppV3/src/main.xc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DemoAppV3/src/main.xc"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="587" selectionTopPixel="276"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -55,10 +61,12 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (22 items)"/>
+<expanded>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (59 items)"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="324" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="710"/>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -75,7 +83,7 @@
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline"/>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="com.xmos.cdt.ui.XdeEditPerspective">
+<perspectives activePart="com.xmos.cdt.ui.XCEditor" activePerspective="com.xmos.cdt.ui.XdeEditPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.xmos.cdt.ui.XdeEditPerspective" id="com.xmos.cdt.ui.XdeEditPerspective" label="XMOS Edit"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -117,9 +125,9 @@
 <hide_toolbar_item_id id="org.eclipse.ui.workbench.navigate"/>
 <hide_toolbar_item_id id="org.eclipse.ui.file.print"/>
 <hide_toolbar_item_id id="org.eclipse.search.searchActionSet"/>
-<hide_toolbar_item_id id="newWizardDropDown"/>
-<hide_toolbar_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar"/>
+<hide_toolbar_item_id id="newWizardDropDown"/>
 <hide_toolbar_item_id id="org.eclipse.cdt.ui.buildConfigToolbarAction"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="com.xmos.xsoftip.ui.views.xsoftip.XSoftIPView"/>
@@ -155,8 +163,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.17961784" ratioLeft="282" ratioRight="1288" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.54535866" ratioLeft="517" ratioRight="431" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.1961326" ratioLeft="355" ratioRight="1455" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.59713703" ratioLeft="584" ratioRight="394" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -196,7 +204,91 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/Motor/src/Motor.xc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV1.1/src/test.xc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV1/src/test.xc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV3/src/main.xc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DemoAppV3/src/app_handler.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" path="/DemoAppV3/src/app_handler.xc"/>
+</editors>
+<item historyLabel="Motor.xc" index="0">
+<position/>
+</item>
+<item historyLabel="Motor.xc" index="0">
+<position info="not_deleted" x="344" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="3102" y="0"/>
+</item>
+<item historyLabel="test.xc" index="2">
+<position/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="3102" y="0"/>
+</item>
+<item historyLabel="test.xc" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="3102" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="3098" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="1194" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="1371" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="2558" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="2262" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="1523" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="3210" y="0"/>
+</item>
+<item historyLabel="test.xc" index="1">
+<position info="not_deleted" x="1251" y="0"/>
+</item>
+<item historyLabel="main.xc" index="3">
+<position info="not_deleted" x="796" y="0"/>
+</item>
+<item historyLabel="app_handler.h" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.xc" index="3">
+<position info="not_deleted" x="796" y="0"/>
+</item>
+<item historyLabel="app_handler.xc" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="main.xc" index="3">
+<position info="not_deleted" x="796" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -216,23 +308,29 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="main.xc" tooltip="DemoAppV2/src/main.xc">
-<persistable path="/DemoAppV2/src/main.xc"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="test.xc" tooltip="DemoAppV1/src/test.xc">
-<persistable path="/DemoAppV1/src/test.xc"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="interface.html" tooltip="DemoAppV3/web/interface.html">
 <persistable path="/DemoAppV3/web/interface.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="main.xc" tooltip="DemoAppV3/src/main.xc">
-<persistable path="/DemoAppV3/src/main.xc"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="app_handler.xc" tooltip="DemoAppV3/src/app_handler.xc">
 <persistable path="/DemoAppV3/src/app_handler.xc"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="app_handler.h" tooltip="DemoAppV3/src/app_handler.h">
 <persistable path="/DemoAppV3/src/app_handler.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="main.xc" tooltip="DemoAppV3/src/main.xc">
+<persistable path="/DemoAppV3/src/main.xc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="test.xc" tooltip="DemoAppV1/src/test.xc">
+<persistable path="/DemoAppV1/src/test.xc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="test.xc" tooltip="DemoAppV1.1/src/test.xc">
+<persistable path="/DemoAppV1.1/src/test.xc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="Motor.xc" tooltip="Motor/src/Motor.xc">
+<persistable path="/Motor/src/Motor.xc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xmos.cdt.ui.XCEditor" name="main.xc" tooltip="DemoAppV2/src/main.xc">
+<persistable path="/DemoAppV2/src/main.xc"/>
 </file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdlib.h" tooltip="/home/arjun/tools/XMOS/xTIMEcomposer/12.2.0/target/include/stdlib.h">
 <persistable path="/home/arjun/tools/XMOS/xTIMEcomposer/12.2.0/target/include/stdlib.h" project="DemoAppV3"/>
@@ -254,12 +352,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="module_webserver.metainfo" tooltip="module_webserver/module_webserver.metainfo">
 <persistable path="/module_webserver/module_webserver.metainfo"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="DemoAppV3_Debug.xe" tooltip="DemoAppV3/bin/Debug/DemoAppV3_Debug.xe">
-<persistable path="/DemoAppV3/bin/Debug/DemoAppV3_Debug.xe"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="web_files.c.o" tooltip="DemoAppV3/.build_Debug/m_webserver/web_files.c.o">
-<persistable path="/DemoAppV3/.build_Debug/m_webserver/web_files.c.o"/>
 </file>
 </mruList>
 </workbench>

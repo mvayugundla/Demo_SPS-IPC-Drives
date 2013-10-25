@@ -41,6 +41,14 @@ int process_web_page_data(char buf[], int app_state, int connection_state)
   } else
 	((app_state_t *) app_state)->gpio_data.led_0 = atoi(user_choice);
 
+  //reading user choice for port to control valve1
+  if (!user_choice || !(*user_choice)) {
+      char selstr[] = "Error in parsing web page variables";
+      strcpy(buf, selstr);
+      return strlen(selstr);
+    } else
+  	((app_state_t *) app_state)->gpio_data.valve_1 = atoi(user_choice);
+
   user_choice = web_server_get_param("l1", connection_state);
   if (!user_choice || !(*user_choice)) {
     char selstr[] = "Error in parsing web page variables";
@@ -65,7 +73,6 @@ int process_web_page_data(char buf[], int app_state, int connection_state)
   } else
 	((app_state_t *) app_state)->gpio_data.led_3 = atoi(user_choice);
 
-  ((app_state_t *) app_state)->gpio_data.temperature = 0;
   /* Send web page request to app_handler to apply LED settings */
   set_gpio_state(c_gpio, &((app_state_t *) app_state)->gpio_data);
   /* Fetch LEDs, button press states and new temperature value */
@@ -106,46 +113,4 @@ int get_web_user_selection(char buf[],
 	return strlen(selstr);
   } else
 	return 0;
-}
-
-int read_temperature(char buf[], int app_state, int connection_state)
-{
-  if (!web_server_is_post(connection_state))
-	return 0;
-  else {
-    char selstr[] = "Temperature recorded from onboard ADC: <b>NA </b><sup>o</sup>C";
-    selstr[42] = (((app_state_t *) app_state)->gpio_data.temperature/10)+'0';
-    selstr[43] = (((app_state_t *) app_state)->gpio_data.temperature%10)+'0';
-    strcpy(buf, selstr);
-    return strlen(selstr);
-  }
-}
-
-int get_button_state(char buf[], int app_state, int connection_state)
-{
-  if (!web_server_is_post(connection_state))
-    return 0;
-
-  if ((((app_state_t *) app_state)->gpio_data.button_1) &&
-	(((app_state_t *) app_state)->gpio_data.button_2)) {
-    char selstr[] = "<b>Both</b> Button 1 and Button 2 are pressed";
-    strcpy(buf, selstr);
-    return strlen(selstr);
-  }
-  else if (((app_state_t *) app_state)->gpio_data.button_1) {
-    char selstr[] = "<b>Button 1</b> is pressed";
-    strcpy(buf, selstr);
-    return strlen(selstr);
-  }
-  else if (((app_state_t *) app_state)->gpio_data.button_2) {
-    char selstr[] = "<b>Button 2</b> is pressed";
-    strcpy(buf, selstr);
-    return strlen(selstr);
-  }
-  else  {
-    char selstr[] = "Button 1 and Button 2 are <b>not</b> pressed";
-    strcpy(buf, selstr);
-    return strlen(selstr);
-  }
-  return 0;
 }

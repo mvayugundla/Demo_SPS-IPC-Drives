@@ -163,7 +163,7 @@ else
 end
 
 files = {["module_webserver/web_server_conf_example.h"] = "src/web_server_conf.h",
-         ["module_webserver/.example_web/index.html"] = "web/interface.html"}
+         ["module_webserver/.example_web/index.html"] = "web/index.html"}
 
 if swblock.params.use_flash then
    files["module_webserver/.example_web/webserver.conf"] = "web/webserver.conf"

@@ -33,9 +33,10 @@ on stdcore[3]: r_i2c p_i2c =
   {     XS1_PORT_1F,
 		XS1_PORT_1B,
 		1000 };
-//on stdcore[1]: port p_led=XS1_PORT_4A;
+
 on stdcore[3]: port p_led=XS1_PORT_4A;
 on stdcore[3]: port p_button=XS1_PORT_4C;
+on stdcore[3]: port p_valve1 = XS1_PORT_1A;
 //::Ports End
 
 // IP Config - change this to suit your network.  Leave with all
@@ -89,9 +90,7 @@ int main(void) {
           on stdcore[3]:
           {
         	  printstrln("setport...");
-        	  //Switchoff ...
-        	  //p_led<:1;
-        	  app_handler(c_gpio, p_i2c, p_led, p_button);
+        	  app_handler(c_gpio, p_i2c, p_led, p_valve1);
           }
 	}
 	return 0;

@@ -13,7 +13,7 @@
 
 #define DHCP
 
-//on stdcore[0]: out port ext_ant=XS1_PORT_1L; //(for Victor's module)
+on stdcore[0]: out port ext_ant=XS1_PORT_1L; //(for Victor's module)
 
 //::Ports Start
  on stdcore[0]: spi_master_interface tiwisl_spi =
@@ -29,8 +29,8 @@
  {
 
  XS1_PORT_4E, // nCS - Bit0, Power enable - Bit1
- //XS1_PORT_1F, // nIRQ (for Victor's module)
- XS1_PORT_1L, // nIRQ
+ XS1_PORT_1F, // nIRQ (for Victor's module)
+ //XS1_PORT_1L, // nIRQ
  };
 
 on stdcore[3]: r_i2c p_i2c = { XS1_PORT_1F, XS1_PORT_1B, 1000 };
@@ -85,7 +85,7 @@ int main(void) {
 	{
 		on stdcore[0]:
 		{
-			//ext_ant<:1; //(for Victor's module)
+			ext_ant<:1; //(for Victor's module)
 			wifi_tiwisl_server(c_xtcp[0], tiwisl_spi, tiwisl_ctrl);
 		}
 

@@ -8,13 +8,11 @@
 #include "i2c.h"
 
 typedef struct gpio_state {
+  int valve_1;
   int led_0;
   int led_1;
   int led_2;
   int led_3;
-  int button_1;
-  int button_2;
-  int temperature;
 } gpio_state_t;
 
 /** =========================================================================
@@ -28,14 +26,13 @@ typedef struct gpio_state {
  * tcp handler
  * \param p_i2c i2c to read adc value from i2c master
  * \param p_led GPIO LED ports
- * \param p_button GPIO button ports
- * tcp handler
- *
+ * \param p_valve valve ports
  * \return None
  *
  **/
-void app_handler(chanend c_gpio, REFERENCE_PARAM(r_i2c, p_i2c), port p_led, port p_button);
+void app_handler(chanend c_gpio, REFERENCE_PARAM(r_i2c, p_i2c), port p_led, port p_valve1);
 void set_gpio_state(chanend c_gpio, REFERENCE_PARAM(gpio_state_t, gpio_new_state));
 void get_gpio_state(chanend c_gpio, REFERENCE_PARAM(gpio_state_t, gpio_state));
+
 
 #endif /* APP_HANDLER_H_ */

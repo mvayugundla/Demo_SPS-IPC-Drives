@@ -5,26 +5,21 @@
 html,body {
 height: 100%;
 width: 100%;
+margin: 30 0;
+}
+form{
+height: 100%;
+width: 100%;
 margin: 0;
 }
-body {
-background: rgb(1,81,154);
-background: -moz-linear-gradient(-45deg, rgba(1,81,154,1) 1%, rgba(1,81,154,1) 33%, rgba(225,8,80,1) 34%, rgba(225,8,80,1) 66%, rgba(106,174,36,1) 67%, rgba(106,174,36,1) 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(1%,rgba(1,81,154,1)), color-stop(33%,rgba(1,81,154,1)), color-stop(34%,rgba(225,8,80,1)), color-stop(66%,rgba(225,8,80,1)), color-stop(67%,rgba(106,174,36,1)), color-stop(100%,rgba(106,174,36,1)));
-background: -webkit-linear-gradient(-45deg, rgba(1,81,154,1) 1%,rgba(1,81,154,1) 33%,rgba(225,8,80,1) 34%,rgba(225,8,80,1) 66%,rgba(106,174,36,1) 67%,rgba(106,174,36,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(1,81,154,1) 1%,rgba(1,81,154,1) 33%,rgba(225,8,80,1) 34%,rgba(225,8,80,1) 66%,rgba(106,174,36,1) 67%,rgba(106,174,36,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(1,81,154,1) 1%,rgba(1,81,154,1) 33%,rgba(225,8,80,1) 34%,rgba(225,8,80,1) 66%,rgba(106,174,36,1) 67%,rgba(106,174,36,1) 100%);
-background: linear-gradient(135deg, rgba(1,81,154,1) 1%,rgba(1,81,154,1) 33%,rgba(225,8,80,1) 34%,rgba(225,8,80,1) 66%,rgba(106,174,36,1) 67%,rgba(106,174,36,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01519a', endColorstr='#6aae24',GradientType=1 );
-
 </style>
 </head>
 <body>
-<h1>INDUSTRY 4.0 DEMO Application</h1>
-<p>This is an example application to showcase Industrial Automation using Synapticon Somanet components</p>
-<p>{% process_web_page_data(buf,app_state,connection_state) %}</p>
+<center>
+<h1>WELCOME TO SYNAPTICON COCKTAIL BAR!</h1>
+<br><br><br>
 <form name="form" action = "" method="post">
-<p>Select the Recipe to be produced!</p>
+<h2>Pick a cocktail!</h2>
 <table border='1'>
 <tr>
 <td width='150'>Recipe1</td>
@@ -47,7 +42,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01519a', end
 <td><input type="radio" name='l3' id='l3' value='1' {% get_web_user_selection(buf,app_state,connection_state,1,4) %}>On</td>
 </tr>
 </table>
+<br>
+<br>
 <input type="submit" Value="Submit"/>
 </form>
+<p>{% process_web_page_data(buf,app_state,connection_state) %}</p>
+</center>
 </body>
 </html>
