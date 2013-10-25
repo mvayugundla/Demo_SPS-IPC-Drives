@@ -1,3 +1,10 @@
+#Author:
+Mallikarjuna Vayugundla
+email: mvayugundla@synapticon.com
+
+#Date:
+25th October 2013
+
 #Title:
 Industrial 4.0 Demo Application
 
