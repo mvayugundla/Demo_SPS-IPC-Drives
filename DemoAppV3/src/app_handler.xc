@@ -37,7 +37,7 @@ static int read_adc_value(r_i2c &p_i2c)
   return 0;
 }
 
-void app_handler(chanend c_gpio, r_i2c &p_i2c, port p_led, port p_valve1) {
+void app_handler(chanend c_gpio, port p_led, port p_valve1,port p_valve2) {
   while (1) {
     select {
       case c_gpio :> int cmd:
@@ -82,6 +82,7 @@ void app_handler(chanend c_gpio, r_i2c &p_i2c, port p_led, port p_valve1) {
         	printintln(valve1_state);
         	p_led <: led_state;
         	p_valve1 <: gpio_state.led_0;
+        	p_valve2 <: gpio_state.led_1;
           }
           break;
           case APP_HANDLER_GET_GPIO_STATE: {

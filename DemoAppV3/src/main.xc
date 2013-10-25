@@ -29,14 +29,9 @@ on stdcore[0]: wifi_tiwisl_ctrl_ports_t tiwisl_ctrl =
   XS1_PORT_1L, // nIRQ
 };
 
-on stdcore[3]: r_i2c p_i2c =
-  {     XS1_PORT_1F,
-		XS1_PORT_1B,
-		1000 };
-
 on stdcore[3]: port p_led=XS1_PORT_4A;
-on stdcore[3]: port p_button=XS1_PORT_4C;
 on stdcore[3]: port p_valve1 = XS1_PORT_1A;
+on stdcore[3]: port p_valve2 = XS1_PORT_1B;
 //::Ports End
 
 // IP Config - change this to suit your network.  Leave with all
@@ -90,7 +85,7 @@ int main(void) {
           on stdcore[3]:
           {
         	  printstrln("setport...");
-        	  app_handler(c_gpio, p_i2c, p_led, p_valve1);
+        	  app_handler(c_gpio, p_led, p_valve1, p_valve2);
           }
 	}
 	return 0;

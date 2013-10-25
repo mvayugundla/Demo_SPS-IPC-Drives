@@ -9,8 +9,8 @@ email: mvayugundla@synapticon.com
 Industrial 4.0 Demo Application
 
 #Description:
-To showcase how easy to automate the future insdutries using Synapticon's SOMANET modules.
-Selected to showcase is a automatic cocktail mixer basing on a user#s choice.
+To showcase how easy it is to automate the future insdutries using Synapticon's SOMANET modules.
+Selected to showcase is an automatic cocktail mixer basing on a user#s choice.
 
 #Details:
 This is done over wifi.
