@@ -32,6 +32,8 @@ on stdcore[0]: wifi_tiwisl_ctrl_ports_t tiwisl_ctrl =
 on stdcore[3]: port p_led=XS1_PORT_4A;
 on stdcore[3]: port p_valve1 = XS1_PORT_1A;
 on stdcore[3]: port p_valve2 = XS1_PORT_1B;
+on stdcore[3]: port p_valve3 = XS1_PORT_1C;
+
 //::Ports End
 
 // IP Config - change this to suit your network.  Leave with all

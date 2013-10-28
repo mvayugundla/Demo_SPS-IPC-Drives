@@ -2,6 +2,6 @@
 **** Clean-only build of configuration Debug for project DemoAppV1 ****
 
 xmake CONFIG=Debug clean 
-Cleaning /home/arjun/Dropbox/workspace/workspace_synapticon/XMOS/12.2.0/DemoAppV1
+Cleaning /media/Data/Dropbox/workspace/workspace_synapticon/XMOS/12.2.0/DemoAppV1
 rm -rf './bin/Debug'
 rm -rf './.build_Debug'
