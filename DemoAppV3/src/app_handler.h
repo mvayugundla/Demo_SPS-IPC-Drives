@@ -30,7 +30,7 @@ typedef struct gpio_state {
  * \return None
  *
  **/
-void app_handler(chanend c_gpio, port p_led, port p_valve1,port p_valve2);
+void app_handler(chanend c_gpio, port p_led, port p_valve1,port p_valve2, port p_valve3);
 void set_gpio_state(chanend c_gpio, REFERENCE_PARAM(gpio_state_t, gpio_new_state));
 void get_gpio_state(chanend c_gpio, REFERENCE_PARAM(gpio_state_t, gpio_state));
 

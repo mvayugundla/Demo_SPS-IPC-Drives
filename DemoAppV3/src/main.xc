@@ -87,7 +87,7 @@ int main(void) {
           on stdcore[3]:
           {
         	  printstrln("setport...");
-        	  app_handler(c_gpio, p_led, p_valve1, p_valve2);
+        	  app_handler(c_gpio, p_led, p_valve1, p_valve2, p_valve3);
           }
 	}
 	return 0;
