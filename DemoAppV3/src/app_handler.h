@@ -34,5 +34,4 @@ void app_handler(chanend c_gpio, port p_led, port p_valve1,port p_valve2, port p
 void set_gpio_state(chanend c_gpio, REFERENCE_PARAM(gpio_state_t, gpio_new_state));
 void get_gpio_state(chanend c_gpio, REFERENCE_PARAM(gpio_state_t, gpio_state));
 
-
 #endif /* APP_HANDLER_H_ */

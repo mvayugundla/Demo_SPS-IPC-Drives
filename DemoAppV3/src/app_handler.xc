@@ -43,7 +43,6 @@ void app_handler(chanend c_gpio, port p_led, port p_valve1,port p_valve2, port p
       case c_gpio :> int cmd:
         switch (cmd) {
           case APP_HANDLER_SET_GPIO_STATE: {
-
         	gpio_state_t gpio_new_state;
         	unsigned int valve1_state = 0; //valve off
         	p_valve1:> valve1_state;

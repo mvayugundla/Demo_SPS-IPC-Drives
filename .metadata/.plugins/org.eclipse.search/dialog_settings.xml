@@ -9,8 +9,8 @@
 	<section name="DialogBounds_SearchDialog">
 		<item value="663" key="DIALOG_WIDTH"/>
 		<item value="224" key="DIALOG_Y_ORIGIN"/>
-		<item value="487" key="DIALOG_HEIGHT"/>
 		<item value="630" key="DIALOG_X_ORIGIN"/>
+		<item value="487" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="Search">
@@ -23,20 +23,23 @@
 			<item value="org.eclipse.cdt.ui.pdomSearchPage"/>
 		</list>
 	</section>
-	<section name="org.eclipse.search.text.FileSearchResultPage">
-		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
-	</section>
 	<section name="org.eclipse.cdt.ui.pdomSearchViewPage">
 		<item value="true" key="showEnclosingDefinitions"/>
+	</section>
+	<section name="org.eclipse.search.text.FileSearchResultPage">
+		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
 	</section>
 	<section name="TextSearchPage">
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="false" key="REG_EX_SEARCH"/>
 		<item value="false" key="SEARCH_DERIVED"/>
-		<item value="4" key="HISTORY_SIZE"/>
+		<item value="5" key="HISTORY_SIZE"/>
+		<section name="EXTENSIONS">
+			<item value="*.C, *.S, *.a, *.ant, *.asm, *.c, *.c++, *.cc, *.cpp, *.cxx, *.dll, *.dylib, *.ecore, *.elf, *.emof, *.ent, *.exe, *.exsd, *.gprof, *.h, *.hh, *.hpp, *.htm, *.html, *.hxx, *.i, *.ii, *.lib, *.macrodef, *.mediawiki, *.metainfo, *.mk, *.o, *.obj, *.out, *.prefs, *.properties, *.shtml, *.so, *.txt, *.vcd, *.wsdl, *.xc, *.xe, *.xi, *.xmi, *.xml, *.xmt, *.xn, *.xsd, *.xsl, *.xslt, *.xta" key="0"/>
+		</section>
 		<section name="HISTORY2">
 			<item value="false" key="isRegExSearch"/>
-			<item value="read_temperature" key="textPattern"/>
+			<item value="p_led" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -97,68 +100,65 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="EXTENSIONS">
-			<item value="*.C, *.S, *.a, *.ant, *.asm, *.c, *.c++, *.cc, *.cpp, *.cxx, *.dll, *.dylib, *.ecore, *.elf, *.emof, *.ent, *.exe, *.exsd, *.gprof, *.h, *.hh, *.hpp, *.htm, *.html, *.hxx, *.i, *.ii, *.lib, *.macrodef, *.mediawiki, *.metainfo, *.mk, *.o, *.obj, *.out, *.prefs, *.properties, *.shtml, *.so, *.txt, *.vcd, *.wsdl, *.xc, *.xe, *.xi, *.xmi, *.xml, *.xmt, *.xn, *.xsd, *.xsl, *.xslt, *.xta" key="0"/>
-		</section>
 		<section name="HISTORY3">
 			<item value="false" key="isRegExSearch"/>
-			<item value="index.html" key="textPattern"/>
+			<item value="read_temperature" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
-				<item value="*.C"/>
-				<item value="*.S"/>
-				<item value="*.a"/>
-				<item value="*.ant"/>
-				<item value="*.asm"/>
-				<item value="*.c"/>
-				<item value="*.c++"/>
-				<item value="*.cc"/>
-				<item value="*.cpp"/>
-				<item value="*.cxx"/>
-				<item value="*.dll"/>
-				<item value="*.dylib"/>
-				<item value="*.ecore"/>
-				<item value="*.elf"/>
-				<item value="*.emof"/>
-				<item value="*.ent"/>
-				<item value="*.exe"/>
-				<item value="*.exsd"/>
-				<item value="*.gprof"/>
-				<item value="*.h"/>
-				<item value="*.hh"/>
-				<item value="*.hpp"/>
-				<item value="*.htm"/>
-				<item value="*.html"/>
-				<item value="*.hxx"/>
-				<item value="*.i"/>
-				<item value="*.ii"/>
-				<item value="*.lib"/>
-				<item value="*.macrodef"/>
-				<item value="*.mediawiki"/>
-				<item value="*.metainfo"/>
-				<item value="*.mk"/>
-				<item value="*.o"/>
-				<item value="*.obj"/>
-				<item value="*.out"/>
 				<item value="*.prefs"/>
-				<item value="*.properties"/>
-				<item value="*.shtml"/>
 				<item value="*.so"/>
-				<item value="*.txt"/>
-				<item value="*.vcd"/>
+				<item value="*.xn"/>
+				<item value="*.C"/>
+				<item value="*.ent"/>
 				<item value="*.wsdl"/>
-				<item value="*.xc"/>
+				<item value="*.lib"/>
 				<item value="*.xe"/>
 				<item value="*.xi"/>
-				<item value="*.xmi"/>
-				<item value="*.xml"/>
-				<item value="*.xmt"/>
-				<item value="*.xn"/>
-				<item value="*.xsd"/>
+				<item value="*.shtml"/>
 				<item value="*.xsl"/>
-				<item value="*.xslt"/>
+				<item value="*.ecore"/>
+				<item value="*.xc"/>
+				<item value="*.xsd"/>
+				<item value="*.cc"/>
+				<item value="*.emof"/>
+				<item value="*.dylib"/>
+				<item value="*.obj"/>
+				<item value="*.txt"/>
+				<item value="*.properties"/>
+				<item value="*.out"/>
 				<item value="*.xta"/>
+				<item value="*.xslt"/>
+				<item value="*.dll"/>
+				<item value="*.asm"/>
+				<item value="*.mediawiki"/>
+				<item value="*.ant"/>
+				<item value="*.xmt"/>
+				<item value="*.i"/>
+				<item value="*.h"/>
+				<item value="*.html"/>
+				<item value="*.htm"/>
+				<item value="*.cxx"/>
+				<item value="*.exsd"/>
+				<item value="*.xml"/>
+				<item value="*.gprof"/>
+				<item value="*.xmi"/>
+				<item value="*.vcd"/>
+				<item value="*.exe"/>
+				<item value="*.macrodef"/>
+				<item value="*.o"/>
+				<item value="*.hh"/>
+				<item value="*.cpp"/>
+				<item value="*.elf"/>
+				<item value="*.hxx"/>
+				<item value="*.a"/>
+				<item value="*.metainfo"/>
+				<item value="*.c"/>
+				<item value="*.mk"/>
+				<item value="*.hpp"/>
+				<item value="*.S"/>
+				<item value="*.c++"/>
+				<item value="*.ii"/>
 			</list>
 			<list key="workingSets">
 			</list>
@@ -228,63 +228,126 @@
 		</section>
 		<section name="HISTORY1">
 			<item value="false" key="isRegExSearch"/>
-			<item value="p_led" key="textPattern"/>
+			<item value="&apos;get_button_state&apos;" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
-				<item value="*.prefs"/>
-				<item value="*.so"/>
-				<item value="*.xn"/>
 				<item value="*.C"/>
+				<item value="*.S"/>
+				<item value="*.a"/>
+				<item value="*.ant"/>
+				<item value="*.asm"/>
+				<item value="*.c"/>
+				<item value="*.c++"/>
+				<item value="*.cc"/>
+				<item value="*.cpp"/>
+				<item value="*.cxx"/>
+				<item value="*.dll"/>
+				<item value="*.dylib"/>
+				<item value="*.ecore"/>
+				<item value="*.elf"/>
+				<item value="*.emof"/>
 				<item value="*.ent"/>
-				<item value="*.wsdl"/>
+				<item value="*.exe"/>
+				<item value="*.exsd"/>
+				<item value="*.gprof"/>
+				<item value="*.h"/>
+				<item value="*.hh"/>
+				<item value="*.hpp"/>
+				<item value="*.htm"/>
+				<item value="*.html"/>
+				<item value="*.hxx"/>
+				<item value="*.i"/>
+				<item value="*.ii"/>
 				<item value="*.lib"/>
+				<item value="*.macrodef"/>
+				<item value="*.mediawiki"/>
+				<item value="*.metainfo"/>
+				<item value="*.mk"/>
+				<item value="*.o"/>
+				<item value="*.obj"/>
+				<item value="*.out"/>
+				<item value="*.prefs"/>
+				<item value="*.properties"/>
+				<item value="*.shtml"/>
+				<item value="*.so"/>
+				<item value="*.txt"/>
+				<item value="*.vcd"/>
+				<item value="*.wsdl"/>
+				<item value="*.xc"/>
 				<item value="*.xe"/>
 				<item value="*.xi"/>
-				<item value="*.shtml"/>
-				<item value="*.xsl"/>
-				<item value="*.ecore"/>
-				<item value="*.xc"/>
-				<item value="*.xsd"/>
-				<item value="*.cc"/>
-				<item value="*.emof"/>
-				<item value="*.dylib"/>
-				<item value="*.obj"/>
-				<item value="*.txt"/>
-				<item value="*.properties"/>
-				<item value="*.out"/>
-				<item value="*.xta"/>
-				<item value="*.xslt"/>
-				<item value="*.dll"/>
-				<item value="*.asm"/>
-				<item value="*.mediawiki"/>
-				<item value="*.ant"/>
-				<item value="*.xmt"/>
-				<item value="*.i"/>
-				<item value="*.h"/>
-				<item value="*.html"/>
-				<item value="*.htm"/>
-				<item value="*.cxx"/>
-				<item value="*.exsd"/>
-				<item value="*.xml"/>
-				<item value="*.gprof"/>
 				<item value="*.xmi"/>
-				<item value="*.vcd"/>
-				<item value="*.exe"/>
-				<item value="*.macrodef"/>
-				<item value="*.o"/>
-				<item value="*.hh"/>
-				<item value="*.cpp"/>
-				<item value="*.elf"/>
-				<item value="*.hxx"/>
-				<item value="*.a"/>
-				<item value="*.metainfo"/>
-				<item value="*.c"/>
-				<item value="*.mk"/>
-				<item value="*.hpp"/>
+				<item value="*.xml"/>
+				<item value="*.xmt"/>
+				<item value="*.xn"/>
+				<item value="*.xsd"/>
+				<item value="*.xsl"/>
+				<item value="*.xslt"/>
+				<item value="*.xta"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY4">
+			<item value="false" key="isRegExSearch"/>
+			<item value="index.html" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="true" key="ignoreCase"/>
+			<list key="fileNamePatterns">
+				<item value="*.C"/>
 				<item value="*.S"/>
+				<item value="*.a"/>
+				<item value="*.ant"/>
+				<item value="*.asm"/>
+				<item value="*.c"/>
 				<item value="*.c++"/>
+				<item value="*.cc"/>
+				<item value="*.cpp"/>
+				<item value="*.cxx"/>
+				<item value="*.dll"/>
+				<item value="*.dylib"/>
+				<item value="*.ecore"/>
+				<item value="*.elf"/>
+				<item value="*.emof"/>
+				<item value="*.ent"/>
+				<item value="*.exe"/>
+				<item value="*.exsd"/>
+				<item value="*.gprof"/>
+				<item value="*.h"/>
+				<item value="*.hh"/>
+				<item value="*.hpp"/>
+				<item value="*.htm"/>
+				<item value="*.html"/>
+				<item value="*.hxx"/>
+				<item value="*.i"/>
 				<item value="*.ii"/>
+				<item value="*.lib"/>
+				<item value="*.macrodef"/>
+				<item value="*.mediawiki"/>
+				<item value="*.metainfo"/>
+				<item value="*.mk"/>
+				<item value="*.o"/>
+				<item value="*.obj"/>
+				<item value="*.out"/>
+				<item value="*.prefs"/>
+				<item value="*.properties"/>
+				<item value="*.shtml"/>
+				<item value="*.so"/>
+				<item value="*.txt"/>
+				<item value="*.vcd"/>
+				<item value="*.wsdl"/>
+				<item value="*.xc"/>
+				<item value="*.xe"/>
+				<item value="*.xi"/>
+				<item value="*.xmi"/>
+				<item value="*.xml"/>
+				<item value="*.xmt"/>
+				<item value="*.xn"/>
+				<item value="*.xsd"/>
+				<item value="*.xsl"/>
+				<item value="*.xslt"/>
+				<item value="*.xta"/>
 			</list>
 			<list key="workingSets">
 			</list>
