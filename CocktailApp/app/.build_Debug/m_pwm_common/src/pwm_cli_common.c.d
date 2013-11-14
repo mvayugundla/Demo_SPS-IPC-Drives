@@ -2,4 +2,4 @@
  ../../sc_pwm/module_pwm_common/src/pwm_cli_common.c \
   ../../sc_pwm/module_pwm_common/src/pwm_cli_common.h \
   ../../sc_pwm/module_pwm_common/src/pwm_common.h \
-  ../../CocktailApp_V1/module_commutation/pwm/pwm_config.h
+  ../../CocktailApp/module_commutation/pwm/pwm_config.h

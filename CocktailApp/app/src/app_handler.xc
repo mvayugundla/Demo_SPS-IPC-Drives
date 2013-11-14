@@ -123,21 +123,21 @@ void app_handler(chanend c_position_ctrl, chanend c_gpio, port p_valve1, port p_
 					  printstr("Your drink is ready! Enjoy it!! \n\n\n");*/
 	        	}
 
-	        	if(gpio_new_state.led_1){
+	        	else if(gpio_new_state.led_1){
 	        		printstrln("drink 2 is selected!");
 	        	}
-	        	if(gpio_new_state.led_2){
+	        	else if(gpio_new_state.led_2){
 					printstrln("drink 3 is selected!");
 				}
-	        	if(gpio_new_state.led_3){
+	        	else if(gpio_new_state.led_3){
 					printstrln("drink 4 is selected!");
 				}
 
 
-	        	gpio_state.led_0 = gpio_new_state.led_0;
-	        	gpio_state.led_1 = gpio_new_state.led_1;
-	        	gpio_state.led_2 = gpio_new_state.led_2;
-	        	gpio_state.led_3 = gpio_new_state.led_3;
+	        	gpio_state.led_0 = 0;
+	        	gpio_state.led_1 = 0;
+	        	gpio_state.led_2 = 0;
+	        	gpio_state.led_3 = 0;
 	          }
 	          break;
 	          case APP_HANDLER_GET_GPIO_STATE: {

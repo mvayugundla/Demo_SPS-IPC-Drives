@@ -1,44 +1,44 @@
 .build_Debug/src/main.xc.d ./.build_Debug/src/main.xc.o: ./src/main.xc \
   ../../sc_somanet-base/module_nodeconfig/src/ioports.h \
   ../../sc_somanet-base/module_nodeconfig/src/filename_macro.h \
-  ../../CocktailApp_V1/app/src/nodeconfig.h \
+  ../../CocktailApp/app/src/nodeconfig.h \
   ../../sc_somanet-base/module_nodeconfig/src/core_c22_h.inc \
   ../../sc_somanet-base/module_nodeconfig/src/com_null_h.inc \
   ../../sc_somanet-base/module_nodeconfig/src/ifm_dc900-rev-a_h.inc \
-  ../../CocktailApp_V1/module_hall/src/hall_server.h \
-  ../../CocktailApp_V1/app/config/motor/dc_motor_config.h \
-  ../../CocktailApp_V1/module_blocks/src/filter_blocks/filter_blocks.h \
-  ../../CocktailApp_V1/module_common/src/refclk.h \
-  ../../CocktailApp_V1/module_common/src/internal_config.h \
-  ../../CocktailApp_V1/module_hall/src/hall_config.h \
-  ../../CocktailApp_V1/module_hall/src/hall_client.h \
-  ../../CocktailApp_V1/module_qei/src/qei_client.h \
-  ../../CocktailApp_V1/module_qei/src/qei_config.h \
+  ../../CocktailApp/module_hall/src/hall_server.h \
+  ../../CocktailApp/app/config/motor/dc_motor_config.h \
+  ../../CocktailApp/module_blocks/src/filter_blocks/filter_blocks.h \
+  ../../CocktailApp/module_common/src/refclk.h \
+  ../../CocktailApp/module_common/src/internal_config.h \
+  ../../CocktailApp/module_hall/src/hall_config.h \
+  ../../CocktailApp/module_hall/src/hall_client.h \
+  ../../CocktailApp/module_qei/src/qei_client.h \
+  ../../CocktailApp/module_qei/src/qei_config.h \
   ../../sc_pwm/module_pwm_symmetrical/src/server/pwm_service_inv.h \
   ../../sc_pwm/module_pwm_common/src/pwm_common.h \
-  ../../CocktailApp_V1/module_commutation/pwm/pwm_config.h \
-  ../../CocktailApp_V1/module_commutation/comm_loop.h \
+  ../../CocktailApp/module_commutation/pwm/pwm_config.h \
+  ../../CocktailApp/module_commutation/comm_loop.h \
   ../../sc_pwm/module_pwm_symmetrical/src/client/pwm_cli_inv.h \
   ../../sc_pwm/module_pwm_common/src/pwm_cli_common.h \
-  ../../CocktailApp_V1/module_commutation/predriver/a4935.h \
-  ../../CocktailApp_V1/module_blocks/src/util/sine_table_big.h \
-  ../../CocktailApp_V1/module_adc/src/adc_client_ad7949.h \
-  ../../CocktailApp_V1/module_qei/src/qei_server.h \
-  ../../CocktailApp_V1/module_profile/include/profile.h \
-  ../../CocktailApp_V1/module_ctrl_loops/position/position_ctrl.h \
-  ../../CocktailApp_V1/module_sm/src/drive_config.h \
-  ../../CocktailApp_V1/module_profile/include/profile_control.h \
-  ../../CocktailApp_V1/app/src/app_handler.h \
+  ../../CocktailApp/module_commutation/predriver/a4935.h \
+  ../../CocktailApp/module_blocks/src/util/sine_table_big.h \
+  ../../CocktailApp/module_adc/src/adc_client_ad7949.h \
+  ../../CocktailApp/module_qei/src/qei_server.h \
+  ../../CocktailApp/module_profile/include/profile.h \
+  ../../CocktailApp/module_ctrl_loops/position/position_ctrl.h \
+  ../../CocktailApp/module_sm/src/drive_config.h \
+  ../../CocktailApp/module_profile/include/profile_control.h \
+  ../../CocktailApp/app/src/app_handler.h \
   ../../module_i2c_master/src/i2c.h \
   ../../module_wifi_tiwisl/src/wifi_tiwisl/wifi_tiwisl_server.h \
   ../../module_spi_master/src/spi_master.h \
   ../../module_wifi_tiwisl/src/wifi_tiwisl/spi_conf.h \
-  ../../CocktailApp_V1/app/src/wifi_tiwisl_config.h \
+  ../../CocktailApp/app/src/wifi_tiwisl_config.h \
   ../../module_webserver/src/web_server.h \
   ../../module_wifi_tiwisl/src/xtcp_client.h \
-  ../../CocktailApp_V1/app/src/web_server_conf.h \
-  ../../CocktailApp_V1/app/src/web_page_functions.h \
-  ../../CocktailApp_V1/app/.build_Debug/generated/module_webserver/web_server_gen.h \
+  ../../CocktailApp/app/src/web_server_conf.h \
+  ../../CocktailApp/app/src/web_page_functions.h \
+  ../../CocktailApp/app/.build_Debug/generated/module_webserver/web_server_gen.h \
   ../../module_webserver/src/simplefs.h \
   ../../module_webserver/src/web_server_flash.h \
   ../../module_mutual_thread_comm/src/mutual_thread_comm.h
